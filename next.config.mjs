@@ -1,19 +1,48 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        remotePatterns: [
-            {
-                protocol: 'https',
-                hostname: 'genki-backend.justaddcollagen.com',
-                pathname: '/wp-content/uploads/**',
-            },
-            {
-                protocol: 'https',
-                hostname: 'placehold.co',
-                pathname: '/**',
-            }
-        ],
+  remotePatterns: [
+    // Old backend (keep)
+    {
+      protocol: "https",
+      hostname: "genki-backend.justaddcollagen.com",
+      pathname: "/wp-content/uploads/**",
     },
+
+    // New WP under subfolder (this is what your screenshot shows)
+    {
+      protocol: "https",
+      hostname: "nizen.in",
+      pathname: "/genkiramune/wp-content/uploads/**",
+    },
+
+    // Some images may still come without the subfolder
+    {
+      protocol: "https",
+      hostname: "nizen.in",
+      pathname: "/wp-content/uploads/**",
+    },
+
+    // In case WP/CDN resolves to www
+    {
+      protocol: "https",
+      hostname: "www.nizen.in",
+      pathname: "/genkiramune/wp-content/uploads/**",
+    },
+    {
+      protocol: "https",
+      hostname: "www.nizen.in",
+      pathname: "/wp-content/uploads/**",
+    },
+
+    // Placeholder (keep)
+    {
+      protocol: "https",
+      hostname: "placehold.co",
+      pathname: "/**",
+    },
+  ],
+},
     webpack(config) {
         config.module.rules.push({
             test: /\.svg$/i,

@@ -5,6 +5,7 @@ import InteractiveSection from "../Global/InteractiveSection";
 
 const Banner = ({
     heading = "BlissFul Blueberry",
+    subheading = "",
     text = "Soda that’s always a surprise",
     button,
     desktopImage,

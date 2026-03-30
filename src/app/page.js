@@ -56,6 +56,7 @@ export default async function Home() {
     const {
       banner_button = null,
       banner_heading = "Default Heading",
+      banner_subheading = "",
       banner_image_desktop = defaults.images.desktop,
       banner_image_mobile = defaults.images.mobile,
       banner_text = "",
@@ -72,6 +73,7 @@ export default async function Home() {
 
     const bannerProps = {
       heading: banner_heading,
+      subheading: banner_subheading,
       text: banner_text,
       button: banner_button,
       desktopImage: banner_image_desktop,

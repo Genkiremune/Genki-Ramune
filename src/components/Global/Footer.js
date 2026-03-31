@@ -50,7 +50,7 @@ const Footer = () => {
                         <ul className="space-y-2">
                             <li><Link href='mailto:info@nizona.co'>Email: info@nizona.co</Link></li>
                             <li><Link href='tel:+81782006147'>Phone: +81 (78) 200-6147</Link></li>
-                            <li><Link href='https://www.google.com/maps/dir/19.0939136,72.9939968/Nizen,+Sannomiya+Venture+Bld.+622,+Chuo-ku,+Hamabe+Dori+4-1-23,+Kobe,+Japan+(651-008,+1,+Chuo+Ward,+Kobe,+Hyogo+651-0083,+Japan/@44.1639353,42.5946858,6z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x60008f843160a0a1:0xf7671629e8e8d491!2m2!1d135.200648!2d34.6892546?entry=ttu&g_ep=EgoyMDI2MDMyNC4wIKXMDSoASAFQAw%3D%3D'>Address: Sannomiya Venture Bld. 622,</br> Chuo-ku, Hamabe Dori 4-1-2,</br> Kobe, Japan (651-0083)</Link></li>
+                            <li><Link href='https://www.google.com/maps/dir/19.0939136,72.9939968/Nizen,+Sannomiya+Venture+Bld.+622,+Chuo-ku,+Hamabe+Dori+4-1-23,+Kobe,+Japan+(651-008,+1,+Chuo+Ward,+Kobe,+Hyogo+651-0083,+Japan/@44.1639353,42.5946858,6z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x60008f843160a0a1:0xf7671629e8e8d491!2m2!1d135.200648!2d34.6892546?entry=ttu&g_ep=EgoyMDI2MDMyNC4wIKXMDSoASAFQAw%3D%3D'> Address: Sannomiya Venture Bld. 622,<br/> Chuo-ku, Hamabe Dori 4-1-2,<br/> Kobe, Japan (651-0083)</Link></li>
                         </ul>
                     </div>
                 </div>

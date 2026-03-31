@@ -33,7 +33,7 @@ const Footer = () => {
                     </div>
 
                     <div >
-                        <p className="font-bold text-2xl md:text-lg mb-4">Important Links</p>
+                        <p className="font-bold text-2xl md:text-lg mb-4">Get In Touch With Us</p>
                         {/* <form className="flex flex-col md:flex-row gap-4">
                             <input
                                 type="email"
@@ -48,7 +48,7 @@ const Footer = () => {
                             </button>
                         </form> */}
                         <ul className="space-y-2">
-                            <li><Link href='/about-us'>Terms of Service</Link></li>
+                            <li><Link href='info@nizona.co'>Email: info@nizona.co</Link></li>
                             <li><Link href='/about-us'>Private Policy</Link></li>
                             <li><Link href='/about-us'>Do Not Sell My Information</Link></li>
                         </ul>

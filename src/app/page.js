@@ -109,7 +109,7 @@ export default async function Home() {
         <ProductList {...productListProps} />
         <BrandMetrics {...brandMetricsProps} />
         <VideoFeed {...videoFeedProps} />
-        /*<BlogSection {...blogSectionProps} />*/
+        //<BlogSection {...blogSectionProps} />
       </>
     );
   } catch (error) {

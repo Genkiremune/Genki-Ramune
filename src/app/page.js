@@ -99,9 +99,9 @@ export default async function Home() {
       videos: Array.isArray(videos_feed) ? videos_feed : [],
     };
 
-    const blogSectionProps = {
-      queryParams: { orderBy: "date", per_page: 3, _embed: "" }
-    }
+    // const blogSectionProps = {
+    //   queryParams: { orderBy: "date", per_page: 3, _embed: "" }
+    // }
 
     return (
       <>

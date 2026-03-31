@@ -5,7 +5,7 @@ import { fetchFromApiWp } from "@/utils/api";
 import BrandMetrics from "@/components/Home/BrandMetrics";
 import VideoFeed from "@/components/Home/VideoFeed";
 import defaults from "@/utils/defaults";
-// import BlogSection from "@/components/Home/BlogSection";
+import BlogSection from "@/components/Home/BlogSection";
 
 async function getPageData(queryParams, id = "43") {
   try {

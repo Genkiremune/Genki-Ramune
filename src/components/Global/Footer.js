@@ -57,7 +57,7 @@ const Footer = () => {
 
                 {/* Bottom Section */}
                 <div className="mt-4 pt-8 border-t border-white border-opacity-30 text-center  items-center justify-between">
-                    <p>@ 2024 Genki Ramune, Inc. All Rights Reserved</p>
+                    <p>@ 2026 Genki Ramune, Inc. All Rights Reserved</p>
                     {/* <div className="flex flex-wrap opacity-50 justify-center md:justify-between items-center space-x-10">
                         <a href="#" className="hover:underline">
                             Terms of Service

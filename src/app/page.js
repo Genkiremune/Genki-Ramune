@@ -5,7 +5,6 @@ import { fetchFromApiWp } from "@/utils/api";
 import BrandMetrics from "@/components/Home/BrandMetrics";
 import VideoFeed from "@/components/Home/VideoFeed";
 import defaults from "@/utils/defaults";
-import BlogSection from "@/components/Home/BlogSection";
 
 async function getPageData(queryParams, id = "43") {
   try {
@@ -99,9 +98,6 @@ export default async function Home() {
       videos: Array.isArray(videos_feed) ? videos_feed : [],
     };
 
-    const blogSectionProps = {
-       queryParams: { orderBy: "date", per_page: 3, _embed: "" }
-     }
 
     return (
       <>
@@ -109,7 +105,6 @@ export default async function Home() {
         <ProductList {...productListProps} />
         <BrandMetrics {...brandMetricsProps} />
         <VideoFeed {...videoFeedProps} />
-        <BlogSection {...blogSectionProps} />
       </>
     );
   } catch (error) {

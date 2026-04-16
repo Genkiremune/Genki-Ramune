@@ -6,6 +6,7 @@ import { Sora } from 'next/font/google'
 import _customFont from '@/app/font'
 import Footer from '@/components/Global/Footer';
 import Header from '@/components/Global/Header';
+import Script from 'next/script';
 
 const _sora = Sora({
   weight: ['400', '500', '600'],
@@ -28,15 +29,19 @@ export default function RootLayout({ children }) {
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap" rel="stylesheet" />
       </head>
       <body>
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XRX99390SS"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+        <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-XRX99390SS"
+        strategy="afterInteractive"
+        />
 
-          gtag('config', 'G-XRX99390SS');
-        </script>
+      <Script id="google-analytics" strategy="afterInteractive">
+  {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XRX99390SS');
+  `}
+</Script>
         <Providers>
           <Header />
           <main>{children}</main>

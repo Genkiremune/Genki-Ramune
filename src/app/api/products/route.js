@@ -30,3 +30,7 @@ export async function GET(req) {
         return NextResponse.json({ error: error.message }, { status: 500 });
     }
 }
+
+console.log("WC_API_BASE_URL:", process.env.WC_API_BASE_URL);
+console.log("KEY EXISTS:", !!process.env.NEXT_PUBLIC_WP_CONSUMER_KEY);
+console.log("SECRET EXISTS:", !!process.env.NEXT_PUBLIC_WP_CONSUMER_SECRET);
